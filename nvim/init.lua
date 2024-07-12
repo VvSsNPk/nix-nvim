@@ -4,7 +4,7 @@ local opt = vim.o
 local g = vim.g
 
 -- <leader> key. Defaults to `\`. Some people prefer space.
--- g.mapleader = ' '
+g.mapleader = ' '
 -- g.maplocalleader = ' '
 
 cmd.syntax('on')
@@ -100,7 +100,8 @@ vim.diagnostic.config {
 }
 
 g.editorconfig = true
-
+cmd('colorscheme material')
+g.material_style = "deep ocean"
 vim.opt.colorcolumn = '100'
 
 -- Native plugins
